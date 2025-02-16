@@ -18,7 +18,7 @@ export default function Hero() {
         <p className="text-sm font-semibold text-gray-600 dark:text-gray-400">
           Welcome to my portfolio website!
         </p>
-        <h1 className="text-4xl font-bold mt-2">
+        <h1 className="text-2xl md:text-4xl font-bold mt-2">
           Hello, my name is{" "}
           <span
             className={`${
@@ -45,7 +45,7 @@ export default function Hero() {
             />
           </span>
         </h1>
-        <p className="text-lg text-gray-700 dark:text-gray-300 mt-4">
+        <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mt-4">
           A passionate MERN Stack Developer with experience in building scalable
           and user-friendly web applications. With a solid foundation in HTML,
           CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB, I
