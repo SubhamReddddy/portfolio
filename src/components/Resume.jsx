@@ -12,7 +12,7 @@ const Resume = () => {
       id="resume"
     >
       <Heading title={"Resume"} />
-      <main className="grid grid-cols-2">
+      <main className="grid grid-cols-1 md:grid-cols-2">
         <Timeline title={"Education"} data={education} />
         <Timeline title={"Experience"} data={experience} />
       </main>

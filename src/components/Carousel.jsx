@@ -96,18 +96,26 @@ export default function Carousel() {
           </motion.div>
         </AnimatePresence>
       </div>
-      /* Navigation Arrows */
+      {/* Navigation Arrows */}
       <button
         onClick={() => changeSlide(-1)}
         disabled={isAnimating}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white bg-opacity-30 backdrop-blur-md text-black hover:bg-opacity-50 transition z-20 border-2 flex items-center justify-center"
+        className={`absolute left-1 top-1/2 p-3 rounded-full ${
+          theme == "dark"
+            ? "bg-white text-black border-blue-500"
+            : "bg-black text-white border-blue-400"
+        } bg-opacity-30 backdrop-blur-md hover:bg-opacity-50 transition z-20 border-2 flex items-center justify-center`}
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
         onClick={() => changeSlide(1)}
         disabled={isAnimating}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white bg-opacity-30 backdrop-blur-md text-black hover:bg-opacity-50 transition z-20 border-2 flex items-center justify-center"
+        className={`absolute right-1 top-1/2 p-3 rounded-full ${
+          theme == "dark"
+            ? "bg-white text-black border-blue-500"
+            : "bg-black text-white border-blue-400"
+        } bg-opacity-30 backdrop-blur-md hover:bg-opacity-50 transition z-20 border-2 flex items-center justify-center`}
       >
         <ChevronRight className="w-6 h-6" />
       </button>
@@ -117,7 +125,7 @@ export default function Carousel() {
           <div
             key={index}
             onClick={() => !isAnimating && setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full cursor-pointer transition ${
+            className={`w-2 h-2 md:w-3 md:h-3 rounded-full cursor-pointer transition ${
               currentIndex === index ? "bg-blue-500" : "bg-gray-500"
             }`}
           ></div>

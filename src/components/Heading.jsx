@@ -5,7 +5,7 @@ const Heading = ({ title }) => {
   const [theme] = useThemeContext();
   return (
     <h1
-      className={`text-5xl font-extrabold text-center mb-8 uppercase tracking-wide relative transition-all duration-500
+      className={`text-3xl font-extrabold text-center mb-8 uppercase tracking-wide relative transition-all duration-500
 ${
   theme === "dark"
     ? "text-white drop-shadow-lg"

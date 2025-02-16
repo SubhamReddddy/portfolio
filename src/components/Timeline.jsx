@@ -41,14 +41,12 @@ export default function Timeline({ title, data }) {
                   : "bg-white text-gray-900"
               }`}
             >
-              <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400">
+              <div className="flex items-center space-x-2 text-gray-500">
                 <Calendar className="w-5 h-5" />
                 <span>{item.year}</span>
               </div>
               <h3 className="text-xl font-bold mt-2">{item.title}</h3>
-              <p className="text-gray-700 dark:text-gray-300 mt-2">
-                {item.description}
-              </p>
+              <p className="text-gray-400 mt-2">{item.description}</p>
             </div>
           </div>
         ))}
