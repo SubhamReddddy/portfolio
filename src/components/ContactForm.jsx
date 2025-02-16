@@ -19,10 +19,10 @@ export default function ContactForm() {
 
     emailjs
       .sendForm(
-        "service_p159krn", // Replace with your EmailJS Service ID
-        "template_9a98w2l", // Replace with your EmailJS Template ID
+        `${import.meta.env.VITE_Service_ID}`, // Replace with your EmailJS Service ID
+        `${import.meta.env.VITE_Template_ID}`, // Replace with your EmailJS Template ID
         formRef.current,
-        "mP4DG6Fdi7p2uFM_b" // Replace with your EmailJS Public Key
+        `${import.meta.env.VITE_Public_Key}` // Replace with your EmailJS Public Key
       )
       .then(
         (response) => {
