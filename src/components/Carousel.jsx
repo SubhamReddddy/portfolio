@@ -20,7 +20,7 @@ const slides = [
     description:
       "An interactive app for structured language learning with lessons and exercises.",
     buttonText: "Live Demo",
-    videoText: "https://language-learning-platform-topaz.vercel.app/",
+    url: "https://language-learning-platform-topaz.vercel.app/",
   },
   {
     img: img4,
@@ -28,7 +28,7 @@ const slides = [
     description:
       "A task management app with authentication and CRUD operations.",
     buttonText: "Live Demo",
-    videoText: "https://totofrontend.vercel.app/",
+    url: "https://totofrontend.vercel.app/",
   },
 ];
 
