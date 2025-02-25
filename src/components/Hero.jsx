@@ -1,7 +1,7 @@
 import { useThemeContext } from "../context/Theme";
 import { Download } from "lucide-react";
 import { Typewriter } from "react-simple-typewriter";
-import { img1 } from "../assets/image";
+import { img1,cv } from "../assets/image";
 
 export default function Hero() {
   const [theme] = useThemeContext();
@@ -56,7 +56,7 @@ export default function Hero() {
         {/* Buttons */}
         <div className="mt-6 flex gap-4">
           <a
-            href="https://drive.google.com/file/d/1XCxsQhX62Ufz5fhvccD-83nnyMKE2kiQ/view?usp=drive_link"
+            href={cv}
             download="Subham_Reddy_Resume.pdf"
             target="_blank"
             className={`flex items-center gap-2 px-6 py-3 rounded-full shadow-md transition-all ${
