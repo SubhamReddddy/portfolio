@@ -1,5 +1,11 @@
 export const education = [
   {
+    year: "Aug 2024 – Pursuing",
+    title: "MERN Stack Course",
+    institute: "Jspiders, Marathahalli",
+    description: "Location: Bengaluru, Karnataka",
+  },
+  {
     year: "Aug 2022 – July 2024",
     title: "Master of Computer Application",
     institute: "Gandhi Institute for Technology, Bhubaneswar",
@@ -16,6 +22,12 @@ export const education = [
     title: "Intermediate – CHSE",
     institute: "Saraswati Science Higher Secondary School, Cuttack",
     description: "Percentage: 60%",
+  },
+  {
+    year: "July 2016 – June 2017",
+    title: "Matriculation – HSE",
+    institute: "Saraswati Vidya Mandir, Cuttack",
+    description: "Percentage: 74%",
   },
 ];
 
